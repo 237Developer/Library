@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ultra&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+    <nav>
+        <h1>The Panafrican Library</h1>
+        <button id="add-book">Add New Book</button>
+    </nav>
+    <main>
+        <div class="container" translate="no">
+            
+        </div>
+        <dialog class="form-dialog">
+            <form action="#">
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" required>
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author" required>
+                <label for="image">Cover Image url:</label>
+                <input type="text" name="image" id="image" placeholder="htpps://url-image.com">
+                <label for="page">Number of page:</label>
+                <input type="number" name="page" id="page">
+                <fieldset>
+                    <legend>status</legend>
+                    <input type="radio" name="status" id="read" value="Read" >
+                    <label for="read">Read</label>
+                    <input type="radio" name="status" id="unread" value="Unread" checked>
+                    <label for="unread">Unread</label>
+                </fieldset>
+                <div class="save-or-cancel">
+                    <button type="submit" class="save-btn">Save</button>
+                    <button class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </dialog>
+        <dialog class="confirmation-dialog">
+            <div class="confirmation">
+                <p></p>
+                <div>
+                    <button class="yes-btn">Yes</button>
+                    <button class="no-btn">NO</button>
+                </div>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+        © 2026 The Panafrican. All rights reserved. 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
