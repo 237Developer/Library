@@ -2,12 +2,14 @@ const myLibrary=[];
 
 //pattern of book. 
 
-function Book(title, author, coverImageUrl, status){
-  this.id=crypto.randomUUID();
-  this.title=title;
-  this.author=author;
-  this.coverImageUrl=coverImageUrl;
-  this.status=status;
+class Book{
+   constructor(title, author, coverImageUrl, status){
+    this.id=crypto.randomUUID();
+    this.title=title;
+    this.author=author;
+    this.coverImageUrl=coverImageUrl;
+    this.status=status;
+   }
 }
 
 function addBookToLibrary(title, author, coverImageUrl, status){
